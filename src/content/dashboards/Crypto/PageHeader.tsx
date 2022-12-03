@@ -4,7 +4,7 @@ import { useTheme } from '@mui/material/styles';
 function PageHeader() {
   const user = {
     name: 'Catherine Pike',
-    avatar: '/static/images/avatars/1.jpg'
+    avatar: 'https://bucket-rj7vor.s3.ap-northeast-2.amazonaws.com/20221129_232719.png'
   };
   const theme = useTheme();
 
@@ -24,10 +24,7 @@ function PageHeader() {
       </Grid>
       <Grid item>
         <Typography variant="h3" component="h3" gutterBottom>
-          Welcome, {user.name}!
-        </Typography>
-        <Typography variant="subtitle2">
-          Today is a good day to start trading crypto assets!
+          안녕하세요 팝콘트렌드입니다.
         </Typography>
       </Grid>
     </Grid>

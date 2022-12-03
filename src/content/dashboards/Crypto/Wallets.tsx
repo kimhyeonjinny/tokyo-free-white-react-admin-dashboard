@@ -85,14 +85,7 @@ function Wallets() {
           pb: 3
         }}
       >
-        <Typography variant="h3">Wallets</Typography>
-        <Button
-          size="small"
-          variant="outlined"
-          startIcon={<AddTwoToneIcon fontSize="small" />}
-        >
-          Add new wallet
-        </Button>
+        <Typography variant="h3">테마분석</Typography>
       </Box>
       <Grid container spacing={3}>
         <Grid xs={12} sm={6} md={3} item>
@@ -136,33 +129,19 @@ function Wallets() {
             }}
           >
             <CardContent>
-              <AvatarWrapper>
-                <img
-                  alt="Ripple"
-                  src="/static/images/placeholders/logo/ripple.png"
-                />
-              </AvatarWrapper>
               <Typography variant="h5" noWrap>
-                Ripple
-              </Typography>
-              <Typography variant="subtitle1" noWrap>
-                XRP
+                영상미
               </Typography>
               <Box
                 sx={{
                   pt: 3
                 }}
               >
-                <Typography variant="h3" gutterBottom noWrap>
-                  $586.83
-                </Typography>
-                <Typography variant="subtitle2" noWrap>
-                  5,783 XRP
-                </Typography>
               </Box>
             </CardContent>
           </Card>
         </Grid>
+
         <Grid xs={12} sm={6} md={3} item>
           <Card
             sx={{
@@ -170,49 +149,37 @@ function Wallets() {
             }}
           >
             <CardContent>
-              <AvatarWrapper>
-                <img
-                  alt="Cardano"
-                  src="/static/images/placeholders/logo/cardano.png"
-                />
-              </AvatarWrapper>
               <Typography variant="h5" noWrap>
-                Cardano
-              </Typography>
-              <Typography variant="subtitle1" noWrap>
-                ADA
+                영상미
               </Typography>
               <Box
                 sx={{
                   pt: 3
                 }}
               >
-                <Typography variant="h3" gutterBottom noWrap>
-                  $54,985.00
-                </Typography>
-                <Typography variant="subtitle2" noWrap>
-                  34,985 ADA
-                </Typography>
               </Box>
             </CardContent>
           </Card>
         </Grid>
+
         <Grid xs={12} sm={6} md={3} item>
-          <Tooltip arrow title="Click to add a new wallet">
-            <CardAddAction>
-              <CardActionArea
+          <Card
+            sx={{
+              px: 1
+            }}
+          >
+            <CardContent>
+              <Typography variant="h5" noWrap>
+                연기
+              </Typography>
+              <Box
                 sx={{
-                  px: 1
+                  pt: 3
                 }}
               >
-                <CardContent>
-                  <AvatarAddWrapper>
-                    <AddTwoToneIcon fontSize="large" />
-                  </AvatarAddWrapper>
-                </CardContent>
-              </CardActionArea>
-            </CardAddAction>
-          </Tooltip>
+              </Box>
+            </CardContent>
+          </Card>
         </Grid>
       </Grid>
     </>

@@ -2,7 +2,6 @@ import { Suspense, lazy } from 'react';
 import { Navigate } from 'react-router-dom';
 import { RouteObject } from 'react-router';
 
-import SidebarLayout from 'src/layouts/SidebarLayout';
 import BaseLayout from 'src/layouts/BaseLayout';
 
 import SuspenseLoader from 'src/components/SuspenseLoader';
@@ -122,7 +121,6 @@ const routes: RouteObject[] = [
   },
   {
     path: 'dashboards',
-    element: <SidebarLayout />,
     children: [
       {
         path: '',
@@ -140,7 +138,6 @@ const routes: RouteObject[] = [
   },
   {
     path: 'management',
-    element: <SidebarLayout />,
     children: [
       {
         path: '',
@@ -171,7 +168,6 @@ const routes: RouteObject[] = [
   },
   {
     path: '/components',
-    element: <SidebarLayout />,
     children: [
       {
         path: '',
